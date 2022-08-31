@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="main">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,8 @@
     font-family: var(--font-family);
     font-size: 15px;
   }
-  div.container {
+/*Display: Flex Column for the container*/  
+div.container {
     width: 245px;
     display: flex;
     flex-direction: column;
@@ -58,6 +59,8 @@
     line-height: 1.30rem;
     box-shadow: 0 0 50px 3px rgb(175, 173, 173);
   }
+
+  /*Styling each individual element*/
   .attribution {
     position: relative;
     top: 320px;
@@ -65,38 +68,25 @@
   #img {
     border-radius: 12px;
   }
-  h3 {
+  h1 {
     font-size: 18px;
   }
   p#light {
   color: var(--paragraph-color);
   }
 
+  /*Media Query for Mobile view*/
+  /*Mods made were the position coordinates the width size, and the h3 font-size*/
   @media (max-width: 375px) {
     body {
-    margin: 0 auto;
     width: 375px;
-    max-width: 100%;
-    background: var(--bg-color2);
-    height: 100vh;
-    font-family: var(--font-family);
-    font-size: 15px;
   }
   div.container {
     width: 265px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 100%;
     position: relative;
     top: 100px;
-    background: var(--bg-color);
-    padding: 1rem 1rem 2.25rem;
-    border-radius: 12px;
-    gap: 1rem;
   }
-  h3 {
+  h1 {
     font-size: 20px;
   }
   .attribution {
@@ -116,18 +106,18 @@
         <img src="images/image-qr-code.png" width="100%" alt="qr code" id="img" class="qrCode">
     </div>
 
-    <div class="boldDiv">
-        <h3 id="bold" class="boldText textBold">Improve your front-end skills by building projects</h3>
+    <div class="boldDiv" id="divBold">
+        <h1 id="bold" class="boldText textBold">Improve your front-end skills by building projects</h1>
     </div>
 
-    <div class="lightDiv">
+    <div class="lightDiv" id="divLight">
         <p id="light" class="lightText textLight">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
 </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" id="link" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/KylesTech95/qr-code-component">Kyle Stewart</a>.
+  <div class="attribution" style="font-size: 15px;" id="divAttribute">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" id="link" class="fEM" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/KylesTech95/qr-code-component" id="myLink" class="git">Kyle Stewart</a>.
   </div>
 
 
