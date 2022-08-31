@@ -73,7 +73,6 @@ Modifications made within the query were the position coordinates, the width siz
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://fonts.google.com/) (https://fontawesome.com/)- For styles
 
 ### What I learned
